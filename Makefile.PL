@@ -7,7 +7,7 @@ use 5.006;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "asd",
+  "ABSTRACT" => "helper functions for creating Dancer2 AppRole plugins",
   "AUTHOR" => "Christian Walde <walde.christian\@gmail.com>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
@@ -18,6 +18,8 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.006",
   "NAME" => "Dancer2::Plugin::AppRole::Helper",
   "PREREQ_PM" => {
+    "Exporter" => 0,
+    "parent" => 0,
     "strictures" => 2
   },
   "TEST_REQUIRES" => {
@@ -25,12 +27,14 @@ my %WriteMakefileArgs = (
     "File::Temp" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
+    "Moo" => 0,
+    "Moo::Role" => 0,
     "Test::InDistDir" => 0,
     "Test::More" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.000001",
+  "VERSION" => "1.152120",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -38,13 +42,17 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Exporter" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
   "File::Temp" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
+  "Moo" => 0,
+  "Moo::Role" => 0,
   "Test::InDistDir" => 0,
   "Test::More" => 0,
+  "parent" => 0,
   "strict" => 0,
   "strictures" => 2,
   "warnings" => 0

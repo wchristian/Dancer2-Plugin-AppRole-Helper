@@ -1,3 +1,5 @@
+requires "Exporter" => "0";
+requires "parent" => "0";
 requires "perl" => "5.006";
 requires "strictures" => "2";
 
@@ -6,6 +8,8 @@ on 'test' => sub {
   requires "File::Temp" => "0";
   requires "IO::Handle" => "0";
   requires "IPC::Open3" => "0";
+  requires "Moo" => "0";
+  requires "Moo::Role" => "0";
   requires "Test::InDistDir" => "0";
   requires "Test::More" => "0";
   requires "perl" => "5.006";

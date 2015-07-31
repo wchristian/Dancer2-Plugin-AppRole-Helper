@@ -1,5 +1,5 @@
 {
-   "abstract" : "#",
+   "abstract" : "helper functions for creating Dancer2 AppRole plugins",
    "author" : [
       "Christian Walde <walde.christian@gmail.com>"
    ],
@@ -43,6 +43,8 @@
       },
       "runtime" : {
          "requires" : {
+            "Exporter" : "0",
+            "parent" : "0",
             "perl" : "5.006",
             "strictures" : "2"
          }
@@ -53,6 +55,8 @@
             "File::Temp" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
+            "Moo" : "0",
+            "Moo::Role" : "0",
             "Test::InDistDir" : "0",
             "Test::More" : "0",
             "perl" : "5.006",
@@ -64,7 +68,7 @@
    "provides" : {
       "Dancer2::Plugin::AppRole::Helper" : {
          "file" : "lib/Dancer2/Plugin/AppRole/Helper.pm",
-         "version" : "0.000001"
+         "version" : "1.152120"
       }
    },
    "release_status" : "stable",
@@ -80,6 +84,6 @@
          "web" : "https://github.com/wchristian/Dancer2-Plugin-AppRole-Helper"
       }
    },
-   "version" : "0.000001"
+   "version" : "1.152120"
 }
 
