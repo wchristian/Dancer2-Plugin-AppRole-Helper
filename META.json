@@ -68,7 +68,7 @@
    "provides" : {
       "Dancer2::Plugin::AppRole::Helper" : {
          "file" : "lib/Dancer2/Plugin/AppRole/Helper.pm",
-         "version" : "1.152120"
+         "version" : "1.152121"
       }
    },
    "release_status" : "stable",
@@ -84,6 +84,6 @@
          "web" : "https://github.com/wchristian/Dancer2-Plugin-AppRole-Helper"
       }
    },
-   "version" : "1.152120"
+   "version" : "1.152121"
 }
 
