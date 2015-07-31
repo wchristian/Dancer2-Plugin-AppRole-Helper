@@ -15,7 +15,7 @@ In your plugin:
     package Dancer2::Plugin::Mine;
 
     use Dancer2::Plugin;
-    use Dancer2::EnsureAppRole;
+    use Dancer2::Plugin::AppRole::Helper;
 
     # short version
     on_plugin_import { ensure_approle_s "Mine", @_ };

@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - fix a typo in the synopsis
 
 1.152120  2015-07-31 21:54:53+02:00 Europe/Berlin
     - first implementation
